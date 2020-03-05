@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from aba.zarko-m.com/preview/Default/animations.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2020 04:26:44 GMT -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="zarko-m">
+    <meta name="description" content="Admin Dashboard">
+
+	<title>Aba | Admin Dashboard v1.0</title>
+
+	<!--Bootstrap v4.3.1-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font-awesome -->
+	<link rel="stylesheet" href="../../../use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!--dripicons -->
+	<link href="css/dripicons.css" rel="stylesheet">
+	<!-- fullcalendar -->
+	<link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+	<!-- perfect-scrollbar -->
+	<link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css">
+	<!-- bootstrap-select -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+	<!-- bootstrap-tour -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-tour-standalone.min.css">
+
+	<!-- Custom -->
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.html" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.html" sizes="196x196" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-128.html" sizes="128x128" />
+	<link rel="manifest" href="manifest.json">
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.html" />
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.html" />
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.html" />
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.html" />
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.html" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="day-mode">
+	<div class="wrapper">
+		<!-- Side navigation -->
+		<aside class="side-nav scroll">
+			<div class="smartphone-menu-trigger"><i class="dripicons-align-justify"></i></div>
+			<div class="closeSideNav"><i class="dripicons-cross"></i></div>
+			<ul class="side-nav-wrapper">
+				<li class="brand">
+					<a href="index.html">
+						<img src="img/logo.png" alt="Aba logo">
+					</a>
+				</li>
+				<li class="sideBox-section">Overview</li>
+				<li class="sideBox-item">
+					<a href="index.html" >
+						<i class="sideBox-item-icon dripicons-home"></i>
+					    <span class="sideBox-item-name">Dashboard</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="team.html">
+						<i class="sideBox-item-icon dripicons-heart"></i>
+					    <span class="sideBox-item-name">Team</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="social.html">
+						<i class="sideBox-item-icon dripicons-user-group"></i>
+					    <span class="sideBox-item-name">Social</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="mail.html">
+						<i class="sideBox-item-icon dripicons-mail"></i>
+					    <span class="sideBox-item-name">Email</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-view-apps"></i>
+					    <span class="sideBox-item-name">Apps</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+					    <a class="dropdown-item" href="support.html">Support Center</a>
+					    <a class="dropdown-item" href="tickets.html">Tickets</a>
+					    <a class="dropdown-item" href="calendar.html">Calendar</a>
+					    <a class="dropdown-item" href="todo.html">To Do</a>
+					    <a class="dropdown-item" href="view-project.html">View Project</a>
+					</div>
+				  </div>
+				</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-document-new"></i>
+					    <span class="sideBox-item-name">Pages</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+					    <a class="dropdown-item" href="login.html">Login</a>
+					    <a class="dropdown-item" href="register.html">Register</a>
+					    <a class="dropdown-item" href="lock-screen.html">Lockscreen</a>
+					    <a class="dropdown-item" href="invoice.html">Invoice</a>
+					    <a class="dropdown-item" href="profile.html">Profile</a>
+					    <a class="dropdown-item" href="404.html">404 Page</a>
+					    <a class="dropdown-item" href="500.html">500 Page</a>
+					    <a class="dropdown-item" href="view-mail.html">Mail Example</a>
+					</div>
+				  </div>
+				</li>
+				<li class="sideBox-section">Components</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section currentPage">
+						<i class="sideBox-item-icon dripicons-briefcase"></i>
+					    <span class="sideBox-item-name">UI Elements</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+				  		<a class="dropdown-item currentPage" href="animations.html">Animations</a>
+					    <a class="dropdown-item" href="buttons.html">Buttons</a>
+					    <a class="dropdown-item" href="progress.html">Progress</a>
+					    <a class="dropdown-item" href="modal.html">Modals</a>
+					    <a class="dropdown-item" href="notifications.html">Notification</a>
+					    <a class="dropdown-item" href="grid.html">Grid</a>
+					    <a class="dropdown-item" href="typography.html">Typography</a>
+					</div>
+				  </div>
+				</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-archive"></i>
+					    <span class="sideBox-item-name">Emails</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+					    <a class="dropdown-item" href="emails_welcome.html">Welcome Email</a>
+					    <a class="dropdown-item" href="emails_payment_due.html">Payment Due</a>
+					    <a class="dropdown-item" href="emails_forgotpassword.html">Forgot Password</a>
+					    <a class="dropdown-item" href="emails_activate.html">Activate Account</a>
+					</div>
+				  </div>
+				</li>
+				<li class="sideBox-item">
+					<a href="widgets.html">
+						<i class="sideBox-item-icon dripicons-gear"></i>
+					    <span class="sideBox-item-name">Widgets</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="pricing.html">
+						<i class="sideBox-item-icon dripicons-tags"></i>
+					    <span class="sideBox-item-name">Pricing</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="forms.html">
+						<i class="sideBox-item-icon dripicons-document"></i>
+					    <span class="sideBox-item-name">Forms</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="charts.html">
+						<i class="sideBox-item-icon dripicons-graph-line"></i>
+					    <span class="sideBox-item-name">Charts</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="tables.html">
+						<i class="sideBox-item-icon dripicons-checklist"></i>
+					    <span class="sideBox-item-name">Tables</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-location"></i>
+					    <span class="sideBox-item-name">Maps</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+					    <a class="dropdown-item" href="maps-google.html">Google Maps</a>
+					    <a class="dropdown-item" href="maps-vector.html">Vector Maps</a>
+					</div>
+				  </div>
+				</li>
+	    	</ul>
+		</aside><!-- end .side-nav -->
+		<!-- Content Wrapper -->
+		<main class="contentWrapper container-fluid">
+			<!-- Top navigation -->
+			<nav id="top-nav">
+				<div class="sideNavToggle"
+				><i class="dripicons-align-justify"></i></div>
+				<div class="nav-search-input">
+					<input type="text" class="form-control" placeholder="Search...">
+					<i id="search" class="dripicons-search"></i>
+				</div>
+				<div class="mobile-search-active animated fadeInRight">
+                  <form class="mobile-search-box">
+                      <i class="dripicons-search"></i>
+                      <input class="mobile-search-input" autofocus type="text" spellcheck="false" placeholder="Search...">   
+                      <button type="button" class="exit-search">
+                        <span>×</span>
+                      </button> 
+                  </form>
+                </div>
+				<a class="logo-mobile" href="index.html"><img src="img/logo.png" alt="Aba logo"></a>	      
+				<div class="user-profile dropdown show">
+					<a class="dropdown-toggle" href="#" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<img src="img/users/user01.jpg" alt="User image">
+						<i class="user-icon-m dripicons-user"></i>
+						<span class="dropdown-arrow dripicons-chevron-down"></span>
+					</a>
+					<div class="dropdown-menu animated zoomIn">
+						<div class="dropdown-menu-wrapper">
+					    	<a class="dropdown-item" href="profile.html"><i class="dripicons-user"></i> Profile</a>
+					    	<a class="dropdown-item" href="#"><i class="dripicons-toggles"></i> Settings</a>
+					    	<div id="dark-toggle" class="dropdown-item">		Dark mode:
+								<label class="mode-container">
+								  <input type="checkbox">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+							<a class="dropdown-item" href="support.html"><i class="dripicons-anchor"></i> FAQ</a>
+					    	<a class="dropdown-item" href="support.html"><i class="dripicons-ticket"></i> Support</a>
+							<a class="dropdown-item" href="login.html"><i class="dripicons-exit"></i> Sign out</a>
+						</div>
+					</div>
+				</div>
+				<p class="user-name">
+					Anthony Henderson
+					<span class="user-position">Team Admin</span>
+				</p>
+				<ul class="nav-icons">
+					<li class="nav-calendar dropdown">
+						<a class="dropdown-toggle" data-display="static" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="dripicons-calendar"></i>
+						</a>
+						<ul class="user-calendar dropdown-menu animated zoomIn">
+							<li>
+								<div class="dropdown-menu-wrapper">
+									<div id="calendar"></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-messages dropdown">
+						<a class="dropdown-toggle" data-display="static" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="dripicons-message"></i>
+						</a>
+				    	<ul class="user-messages timeline dropdown-menu-wrapper dropdown-menu animated zoomIn">
+					        <li>
+					          <a href="view-mail.html">
+					          	<img src="img/users/user02.jpg" alt="User profile">
+					          	<p class="user-messages-header">Adelia Hess</p>
+					          	<p class="user-messages-preview">Just checking in to make sure that you got new report…</p>
+					          	<span class="user-messages-time">2 hours ago</span>
+					          </a>
+					        </li>
+					        <li>
+					          <a href="view-mail.html">
+					          	<img src="img/users/user03.jpg" alt="User profile">
+					          	<p class="user-messages-header">Javier Smith</p>
+					          	<p class="user-messages-preview">I appreciate you giving me your direct phone number. I’ll call you in two weeks, as you suggested, once ...</p>
+					          	<span class="user-messages-time">3 hours ago</span>
+					          </a>
+					        </li>
+					        <li>
+					          <a href="view-mail.html">
+					          	<img src="img/users/user04.jpg" alt="User profile">
+					          	<p class="user-messages-header">Diana Seeger</p>
+					          	<p class="user-messages-preview">Hey, thanks for the update...</p>
+					          	<span class="user-messages-time">12 hours ago</span>
+					          </a>
+					        </li>
+					        <li><a href="mail.html" class="view-all">View All Messages</a></li>
+				    	</ul>
+					</li>
+				    <li class="nav-bell dropdown">
+				    	<a class="dropdown-toggle" data-display="static" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="dripicons-bell"></i>
+				    	</a>
+				    	<ul class="user-notification timeline dropdown-menu dropdown-menu-wrapper animated zoomIn">
+					        <li>
+					          <a href="javascript:;">
+					          	<i class="dripicons-user-group"></i>
+					          	<p class="user-notification-header">Users</p>
+					          	<p class="user-notification-desc"><span class="users">24</span> New users joined today<span class="users">!</span></p>
+					          	<span class="user-notification-time">few sec ago</span>
+					          </a>
+					        </li>
+					        <li>
+					          <a href="javascript:;">
+					          	<i class="dripicons-document-remove"></i>
+					          	<p class="user-notification-header">Reports</p>
+					          	<p class="user-notification-desc">Daily report is now available for download.</p>
+					          	<span class="user-notification-time">3 hours ago</span>
+					          </a>
+					        </li>
+					        <li>
+					          <a href="javascript:;">
+					          	<i class="dripicons-warning"></i>
+					          	<p class="user-notification-header">Server Error</p>
+					          	<p class="user-notification-desc">HTTP ERROR <span class="error">500</span> (INTERNAL SERVER ERROR)</p>
+					          	<span class="user-notification-time">7 hours ago</span>
+					          </a>
+					        </li>
+					        <li><a class="view-all" href="javascript:;">View All Notifications</a></li>
+				    	</ul>
+					</li>
+				</ul>
+				<div class="nav-tour">
+					<a id="start-tour" href="#">
+						<i class="dripicons-trophy"></i>
+						<span>Start guided tour</span>
+					</a>
+				</div>
+			</nav><!-- end #top-nav -->
+			<!-- Header -->
+			<div id="content-header">
+				<div class="header-name">
+					<h1><span>Animations</span></h1>
+					<p>A cross-browser library of CSS animations.</p>
+				</div>
+			</div><!-- end #content-header -->
+			<!-- Main content -->
+			<div id="main-content">	
+				<div class="animation-wrapper row">
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Attention Seekers</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounce</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">flash</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">pulse</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rubberBand</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">shake</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">swing</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">tada</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">wobble</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">jello</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Bouncing Entrances</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceIn</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceInDown</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceInLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceInRight</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceInUp</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Bouncing Exits</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceOut</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceInDown</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceOutLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceOutRight</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">bounceOutUp</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">   
+								<h5 class="card-caption">Fading Entrances</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeIn</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeInDown</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeInDownBig</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeInLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeInLeftBig</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeInRight</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeInRightBig</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeInUp</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeInUpBig</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Fading Exits</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOut</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOutDown</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOutDownBig</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOutLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOutLeftBig</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOutRight</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOutRightBig</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOutUp</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">fadeOutUpBig</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+						<div class="card-h">  
+							<h5 class="card-caption">Flippers</h5>
+							<p class="card-a-info">Click on the buttons below to start the animation.</p>
+						</div>
+						<div class="card-b animation-body">
+							<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">flip</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">flipInX</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">flipInY</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">flipOutX</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">flipOutY</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Lightspeed</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">lightSpeedIn</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">lightSpeedOut</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Rotating Entrances</h5>
+							<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+									<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateIn</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateInDownLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateInDownRight</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateInUpLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateInUpRight</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Rotating Exits</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateOut</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateOutDownLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateOutDownRight</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateOutUpLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rotateOutUpRight</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Sliding Entrances</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">slideInUp</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">slideInDown</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">slideInLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">slideInRight</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Sliding Exits</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">slideOutUp</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">slideOutDown</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">slideOutLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">slideOutRight</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Zoom Entrances</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+									<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomIn</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomInDown</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomInLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomInRight</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomInUp</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Zoom Exits</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomOut</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomOutDown</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomOutLeft</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomOutRight</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">zoomOutUp</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 m-b-30">
+						<div class="card-box">
+							<div class="card-h">  
+								<h5 class="card-caption">Specials</h5>
+								<p class="card-a-info">Click on the buttons below to start the animation.</p>
+							</div>
+							<div class="card-b animation-body">
+								<div class="animate-img"><img class="animated" src="img/logo.png" alt="Rocket Logo"></div>
+								<div class="row btns">
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">hinge</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rollIn</button>
+									</div>
+									<div class="col-md-6">
+										<button class="animation-btn btn btn-default">rollOut</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		        </div>
+			</div><!-- end #main-content -->
+			<footer id="footer">
+				<div class="row">
+					<div class="col-md-6">
+						Copyright &copy; 2019 Aba by <a href="#">zarko-m</a>
+					</div>
+					<div class="r-footer col-md-6"><a href="index.html">Terms of use</a> | <a href="index.html">Privacy Policy</a></div>
+				</div>
+			</footer><!-- end #footer -->
+		</main><!-- end .contentWrapper -->
+	</div> <!-- end .wrapper -->
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/fullcalendar-top-nav-config.js"></script>
+  	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  	<script src="js/bootstrap.min.js"></script>
+
+    <!-- perfect-scrollbar -->
+    <script src="js/perfect-scrollbar.min.js"></script>
+    <script src="js/perfect-scrollbar-config.js"></script>
+    <!-- bootstrap-select -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- bootstrap-tour -->
+	<script src="js/bootstrap-tour-standalone.min.js"></script>
+	<script src="js/bootstrap-tour-config.js"></script>
+
+	<!--Custom script -->
+	<script src="js/script.js"></script>
+</body>
+
+<!-- Mirrored from aba.zarko-m.com/preview/Default/animations.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2020 04:26:44 GMT -->
+</html>

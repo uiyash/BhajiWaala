@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from aba.zarko-m.com/preview/Default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2020 04:23:05 GMT -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="zarko-m">
+    <meta name="description" content="Admin Dashboard">
+
+	<title>Aba | Admin Dashboard v1.0</title>
+
+	<!--Bootstrap v4.3.1-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font-awesome -->
+	<link rel="stylesheet" href="../../../use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!--dripicons -->
+	<link href="css/dripicons.css" rel="stylesheet">
+	<!-- fullcalendar -->
+	<link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+	<!-- perfect-scrollbar -->
+	<link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css">
+	<!-- bootstrap-select -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+	<!-- bootstrap-tour -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-tour-standalone.min.css">
+
+	<!-- Custom -->
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.html" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.html" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.html" sizes="196x196" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="img/favicon/favicon-128.html" sizes="128x128" />
+	<link rel="manifest" href="manifest.json">
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.html" />
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.html" />
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.html" />
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.html" />
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.html" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="day-mode">
+	<div class="wrapper">
+		<!-- Side navigation -->
+		<aside class="side-nav scroll">
+			<div class="smartphone-menu-trigger"><i class="dripicons-align-justify"></i></div>
+			<div class="closeSideNav"><i class="dripicons-cross"></i></div>
+			<ul class="side-nav-wrapper">
+				<li class="brand">
+					<a href="index.html">
+						<img src="img/logo.png" alt="Aba logo">
+					</a>
+				</li>
+				<li class="sideBox-section">Overview</li>
+				<li class="sideBox-item">
+					<a href="index.html" >
+						<i class="sideBox-item-icon dripicons-home"></i>
+					    <span class="sideBox-item-name">Dashboard</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="team.html" class="currentPage">
+						<i class="sideBox-item-icon dripicons-heart"></i>
+					    <span class="sideBox-item-name">Team</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="social.html">
+						<i class="sideBox-item-icon dripicons-user-group"></i>
+					    <span class="sideBox-item-name">Social</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="mail.html">
+						<i class="sideBox-item-icon dripicons-mail"></i>
+					    <span class="sideBox-item-name">Email</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-view-apps"></i>
+					    <span class="sideBox-item-name">Apps</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+					    <a class="dropdown-item" href="support.html">Support Center</a>
+					    <a class="dropdown-item" href="tickets.html">Tickets</a>
+					    <a class="dropdown-item" href="calendar.html">Calendar</a>
+					    <a class="dropdown-item" href="todo.html">To Do</a>
+					    <a class="dropdown-item" href="view-project.html">View Project</a>
+					    
+					</div>
+				  </div>
+				</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-document-new"></i>
+					    <span class="sideBox-item-name">Pages</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+					    <a class="dropdown-item" href="login.html">Login</a>
+					    <a class="dropdown-item" href="register.html">Register</a>
+					    <a class="dropdown-item" href="lock-screen.html">Lockscreen</a>
+					    <a class="dropdown-item" href="invoice.html">Invoice</a>
+					    <a class="dropdown-item" href="profile.html">Profile</a>
+					    <a class="dropdown-item" href="404.html">404 Page</a>
+					    <a class="dropdown-item" href="500.html">500 Page</a>
+					    <a class="dropdown-item" href="view-mail.html">Mail Example</a>
+					</div>
+				  </div>
+				</li>
+				<li class="sideBox-section">Components</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-briefcase"></i>
+					    <span class="sideBox-item-name">UI Elements</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+				  		<a class="dropdown-item" href="animations.html">Animations</a>
+					    <a class="dropdown-item" href="buttons.html">Buttons</a>
+					    <a class="dropdown-item" href="progress.html">Progress</a>
+					    <a class="dropdown-item" href="modal.html">Modals</a>
+					    <a class="dropdown-item" href="notifications.html">Notification</a>
+					    <a class="dropdown-item" href="grid.html">Grid</a>
+					    <a class="dropdown-item" href="typography.html">Typography</a>
+					</div>
+				  </div>
+				</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-archive"></i>
+					    <span class="sideBox-item-name">Emails</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+					    <a class="dropdown-item" href="emails_welcome.html">Welcome Email</a>
+					    <a class="dropdown-item" href="emails_payment_due.html">Payment Due</a>
+					    <a class="dropdown-item" href="emails_forgotpassword.html">Forgot Password</a>
+					    <a class="dropdown-item" href="emails_activate.html">Activate Account</a>
+					</div>
+				  </div>
+				</li>
+				<li class="sideBox-item">
+					<a href="widgets.html">
+						<i class="sideBox-item-icon dripicons-gear"></i>
+					    <span class="sideBox-item-name">Widgets</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="pricing.html">
+						<i class="sideBox-item-icon dripicons-tags"></i>
+					    <span class="sideBox-item-name">Pricing</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="forms.html">
+						<i class="sideBox-item-icon dripicons-document"></i>
+					    <span class="sideBox-item-name">Forms</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="charts.html">
+						<i class="sideBox-item-icon dripicons-graph-line"></i>
+					    <span class="sideBox-item-name">Charts</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="tables.html">
+						<i class="sideBox-item-icon dripicons-checklist"></i>
+					    <span class="sideBox-item-name">Tables</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a class="dropdown-section">
+						<i class="sideBox-item-icon dripicons-location"></i>
+					    <span class="sideBox-item-name">Maps</span>
+					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
+					</a>
+				  <div class="dropdown-container animated zoomIn">
+				  	<div class="dropdown-menu-wrapper">
+					    <a class="dropdown-item" href="maps-google.html">Google Maps</a>
+					    <a class="dropdown-item" href="maps-vector.html">Vector Maps</a>
+					</div>
+				  </div>
+				</li>
+	    	</ul>
+		</aside><!-- end .side-nav -->
+		<!-- Content Wrapper -->
+		<main class="contentWrapper container-fluid">
+			<!-- Top navigation -->
+			<nav id="top-nav">
+				<div class="sideNavToggle"
+				><i class="dripicons-align-justify"></i></div>
+				<div class="nav-search-input">
+					<input type="text" class="form-control" placeholder="Search...">
+					<i id="search" class="dripicons-search"></i>
+				</div>
+				<div class="mobile-search-active animated fadeInRight">
+                  <form class="mobile-search-box">
+                      <i class="dripicons-search"></i>
+                      <input class="mobile-search-input" autofocus type="text" spellcheck="false" placeholder="Search...">   
+                      <button type="button" class="exit-search">
+                        <span>×</span>
+                      </button> 
+                  </form>
+                </div>
+				<a class="logo-mobile" href="index.html"><img src="img/logo.png" alt="Aba logo"></a>	      
+				<div class="user-profile dropdown show">
+					<a class="dropdown-toggle" href="#" data-display="static" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<img src="img/users/user01.jpg" alt="User image">
+						<i class="user-icon-m dripicons-user"></i>
+						<span class="dropdown-arrow dripicons-chevron-down"></span>
+					</a>
+					<div class="dropdown-menu animated zoomIn">
+						<div class="dropdown-menu-wrapper">
+					    	<a class="dropdown-item" href="profile.html"><i class="dripicons-user"></i> Profile</a>
+					    	<a class="dropdown-item" href="#"><i class="dripicons-toggles"></i> Settings</a>
+					    	<div id="dark-toggle" class="dropdown-item">		Dark mode:
+								<label class="mode-container">
+								  <input type="checkbox">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+							<a class="dropdown-item" href="support.html"><i class="dripicons-anchor"></i> FAQ</a>
+					    	<a class="dropdown-item" href="support.html"><i class="dripicons-ticket"></i> Support</a>
+							<a class="dropdown-item" href="login.html"><i class="dripicons-exit"></i> Sign out</a>
+						</div>
+					</div>
+				</div>
+				<p class="user-name">
+					Anthony Henderson
+					<span class="user-position">Team Admin</span>
+				</p>
+				<ul class="nav-icons">
+					<li class="nav-calendar dropdown">
+						<a class="dropdown-toggle" data-display="static" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="dripicons-calendar"></i>
+						</a>
+						<ul class="user-calendar dropdown-menu animated zoomIn">
+							<li>
+								<div class="dropdown-menu-wrapper">
+									<div id="calendar"></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-messages dropdown">
+						<a class="dropdown-toggle" data-display="static" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="dripicons-message"></i>
+						</a>
+				    	<ul class="user-messages timeline dropdown-menu-wrapper dropdown-menu animated zoomIn">
+					        <li>
+					          <a href="view-mail.html">
+					          	<img src="img/users/user02.jpg" alt="User profile">
+					          	<p class="user-messages-header">Adelia Hess</p>
+					          	<p class="user-messages-preview">Just checking in to make sure that you got new report…</p>
+					          	<span class="user-messages-time">2 hours ago</span>
+					          </a>
+					        </li>
+					        <li>
+					          <a href="view-mail.html">
+					          	<img src="img/users/user03.jpg" alt="User profile">
+					          	<p class="user-messages-header">Javier Smith</p>
+					          	<p class="user-messages-preview">I appreciate you giving me your direct phone number. I’ll call you in two weeks, as you suggested, once ...</p>
+					          	<span class="user-messages-time">3 hours ago</span>
+					          </a>
+					        </li>
+					        <li>
+					          <a href="view-mail.html">
+					          	<img src="img/users/user04.jpg" alt="User profile">
+					          	<p class="user-messages-header">Diana Seeger</p>
+					          	<p class="user-messages-preview">Hey, thanks for the update...</p>
+					          	<span class="user-messages-time">12 hours ago</span>
+					          </a>
+					        </li>
+					        <li><a href="mail.html" class="view-all">View All Messages</a></li>
+				    	</ul>
+					</li>
+				    <li class="nav-bell dropdown">
+				    	<a class="dropdown-toggle" data-display="static" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="dripicons-bell"></i>
+				    	</a>
+				    	<ul class="user-notification timeline dropdown-menu dropdown-menu-wrapper animated zoomIn">
+					        <li>
+					          <a href="javascript:;">
+					          	<i class="dripicons-user-group"></i>
+					          	<p class="user-notification-header">Users</p>
+					          	<p class="user-notification-desc"><span class="users">24</span> New users joined today<span class="users">!</span></p>
+					          	<span class="user-notification-time">few sec ago</span>
+					          </a>
+					        </li>
+					        <li>
+					          <a href="javascript:;">
+					          	<i class="dripicons-document-remove"></i>
+					          	<p class="user-notification-header">Reports</p>
+					          	<p class="user-notification-desc">Daily report is now available for download.</p>
+					          	<span class="user-notification-time">3 hours ago</span>
+					          </a>
+					        </li>
+					        <li>
+					          <a href="javascript:;">
+					          	<i class="dripicons-warning"></i>
+					          	<p class="user-notification-header">Server Error</p>
+					          	<p class="user-notification-desc">HTTP ERROR <span class="error">500</span> (INTERNAL SERVER ERROR)</p>
+					          	<span class="user-notification-time">7 hours ago</span>
+					          </a>
+					        </li>
+					        <li><a class="view-all" href="javascript:;">View All Notifications</a></li>
+				    	</ul>
+					</li>
+				</ul>
+				<div class="nav-tour">
+					<a id="start-tour" href="#">
+						<i class="dripicons-trophy"></i>
+						<span>Start guided tour</span>
+					</a>
+				</div>
+			</nav><!-- end #top-nav -->
+			<!-- Header -->
+			<div id="content-header">
+				<div class="header-name">
+					<h1>My <span>Team</span></h1>
+					<p>Individually, we are one drop. <br>Together, we are an <span>ocean!</span></p>
+				</div>
+			</div><!-- end #content-header -->
+			<!-- Main content -->
+			<div id="main-content">
+				<div class="row team-stats">
+					<div class="t-productivity col-md-12 col-lg-12 col-xl-9 m-b-30">
+						<div class="row productivity-row">
+							<div class="col-md-12 col-lg-12 col-xl-4 m-b-30">
+								<div class="card-box">
+									<div class="card-h">
+										<h5 class="card-caption">Avg. productivity</h5>
+										<div class="card-dropdown">
+										  <i class="menu-drop dripicons-chevron-down"></i>
+										  <div class="card-dropdown-content">
+										    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+										    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+										    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+										  </div>
+										</div>
+									</div>
+									<div class="card-b product-card">
+										<a class="product-member" href="profile.html">
+											<img src="img/users/user06.jpg" alt="User">
+											<i class="product-trophy dripicons-trophy"></i>
+											<p class="p-member-name">Kacie Wong</p>
+											<p class="p-member-position">Web Developer</p>
+										</a>
+										<div class="p-chart-box">
+											<div class="product-chart">
+												<canvas id="avg-productivity"></canvas>
+											</div>
+											<div class="p-increase">
+												<p>+18<span>%</span></p>
+												<span>Productivity</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+								<div class="card-box">
+									<div class="card-h">
+										<h5 class="card-caption">Most comments</h5>
+										<div class="card-dropdown">
+										  <i class="menu-drop dripicons-chevron-down"></i>
+										  <div class="card-dropdown-content">
+										    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+										    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+										    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+										  </div>
+										</div>
+									</div>
+									<div class="card-b product-card">
+										<a class="product-member" href="profile.html">
+											<img src="img/users/user05.jpg" alt="User">
+											<i class="product-trophy dripicons-message"></i>
+											<p class="p-member-name">Fred Marker</p>
+											<p class="p-member-position">UI Developer</p>
+										</a>
+										<div class="p-chart-box">
+											<div class="product-chart">
+												<canvas id="com-productivity"></canvas>
+											</div>
+											<div class="p-increase">
+												<p>+15<span>%</span></p>
+												<span>Productivity</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+								<div class="card-box">
+									<div class="card-h">
+										<h5 class="card-caption">Most likes</h5>
+										<div class="card-dropdown">
+										  <i class="menu-drop dripicons-chevron-down"></i>
+										  <div class="card-dropdown-content">
+										    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+										    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+										    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+										  </div>
+										</div>
+									</div>
+									<div class="card-b product-card">
+										<a class="product-member" href="profile.html">
+											<img src="img/users/user02.jpg" alt="User">
+											<i class="product-trophy dripicons-heart"></i>
+											<p class="p-member-name">Adelia Hess</p>
+											<p class="p-member-position">Project menager</p>
+										</a>
+										<div class="p-chart-box">
+											<div class="product-chart">
+												<canvas id="likes-productivity"></canvas>
+											</div>
+											<div class="p-increase">
+												<p>+9<span>%</span></p>
+												<span>Productivity</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-xl-4">
+								<div class="row r-customers">
+									<div class="col-lg-12 m-b-30">
+										<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Customers</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b">
+												<p class="card-num">12,191</p>
+												<p class="c-growth m-b-10 m-t--2"><span class="more">+9.1%</span> since last week.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row r-orders">
+									<div class="col-lg-12 m-b-30">
+										<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Orders</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b">
+												<p class="card-num">5,499</p>
+												<p class="c-growth m-b-10 m-t--2"><span class="less">-1.3%</span> since last week.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row r-growth">
+									<div class="col-lg-12">
+										<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Growth</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b">
+												<p class="card-num">+30.6%</p>
+												<p class="c-growth m-b-10 m-t--2"><span class="more">+6.1%</span> since last week.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="discussion-groups col-md-12 col-lg-12 col-xl-8">
+								<div class="card-box">
+									<div class="card-h">
+										<h5 class="card-caption">Discussion groups</h5>
+										<div class="card-dropdown">
+										  <i class="menu-drop dripicons-chevron-down"></i>
+										  <div class="card-dropdown-content">
+										    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+										    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+										    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+										  </div>
+										</div>
+									</div>
+									<div class="card-b groups-card m-b-30">
+										<div class="disc-group-wrapper">
+											<p class="group-header">Aba UI Design<span class="group-author">Created by: You</span> <span class="group-date">yesterday</span></p>
+											<p class="group-desc">Group created to discuss about project changes.</p>
+											<div class="group-mebers">
+												<a href="profile.html"><img src="img/users/user02.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user03.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user04.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user05.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user06.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user07.jpg" alt="User image"></a>
+												<a class="more-group-mebers" href="#">14+</a>
+											</div>
+											<a href="#" class="group-footer"><i class="dripicons-enter"></i> Join Group</a>
+										</div>
+										<div class="disc-group-wrapper">
+											<p class="group-header">Create overall flow prototype<span class="group-author">Created by: Diana Seeger</span> <span class="group-date">2 days ago</span></p>
+											<p class="group-desc">Created to discuss about how to create overall flow prototype.</p>
+											<div class="group-mebers">
+												<a href="profile.html"><img src="img/users/user09.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user10.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user08.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user11.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user03.jpg" alt="User image"></a>
+												<a href="profile.html"><img src="img/users/user02.jpg" alt="User image"></a>
+												<a class="more-group-mebers" href="#">5+</a>
+											</div>
+											<a href="#" class="group-footer"><i class="dripicons-enter"></i> Join Group</a>
+										</div>
+										<a href="#" class="all-groups">See All Groups</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="t-activity-card col-md-12 col-lg-12 col-xl-3 m-b-30">
+						<div class="card-box">
+							<div class="card-h">
+								<h5 class="card-caption">Team activity</h5>
+								<div class="card-dropdown">
+								  <i class="menu-drop dripicons-chevron-down"></i>
+								  <div class="card-dropdown-content">
+								    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+								    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+								    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+								  </div>
+								</div>
+							</div>
+							<div class="card-b">
+								<div class="team-activity-box scroll">
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user02.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Adelia Hess</span> just released work Photography app.</p>
+											<p class="t-activity-user-time">just now</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user03.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Javier Smith</span> completed this task.</p>
+											<p class="t-activity-user-time">2 hours ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user04.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Diana Seeger</span> assigned a task to <span>Kacie Wong</span>.</p>
+											<p class="t-activity-user-time">3 hours ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user05.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Fred Marker</span> just released work Music app.</p>
+											<p class="t-activity-user-time">5 hours ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user06.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Kacie Wong</span> created an event.</p>
+											<p class="t-activity-user-time">yesterday</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user07.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Kirk Taranto</span> uploded new file.</p>
+											<p class="t-activity-user-time">2 days ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user08.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Julie Steward</span> created an event.</p>
+											<p class="t-activity-user-time">2 days ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user09.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Ron Kohls</span> uploded new file.</p>
+											<p class="t-activity-user-time">3 days ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user10.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Teresa Oyler</span> completed this task.</p>
+											<p class="t-activity-user-time">4 days ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user02.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Adelia Hess</span> just released work Video app.</p>
+											<p class="t-activity-user-time">5 days ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user03.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Javier Smith</span> completed this task.</p>
+											<p class="t-activity-user-time">6 days ago</p>
+										</a>
+									</div>
+									<div class="t-activity-wrapper">
+										<a href="profile.html" class="t-activity-user">
+											<img src="img/users/user04.jpg" alt="User image">
+											<p class="t-activity-user-desc"><span>Diana Seeger</span> assigned a task to <span>Ron Kohls</span>.</p>
+											<p class="t-activity-user-time">7 days ago</p>
+										</a>
+									</div>							
+								</div>
+								<a href="#" class="all-t-activity">See All Activity</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-12 m-b-30">
+						<ul class="team-tablist nav justify-content-center" role="tablist">
+			              <li class="active">
+			              	<a class="active" href="#projects" role="tab" data-toggle="tab" aria-expanded="false">Projects</a>
+			              </li>
+			              <li class="">
+			              	<a href="#tasks" role="tab" data-toggle="tab" aria-expanded="true">Tasks</a>
+			              </li>
+			              <li class="">
+			              	<a href="#members" role="tab" data-toggle="tab" aria-expanded="true">Members</a>
+			              </li>
+			            </ul>
+						<div class="team-tablist-content tab-content">
+				            <div role="tabpanel" class="tab-pane active animated fadeInUp" id="projects">
+				            	<h3 class="tab-title">Projects <span><a href="#">+</a></span></h3>
+				            	<div class="row">
+				            		<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Branding Rocket #56</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">To rebrand Rocket App, you need to develop a new logo for the layout that was provided, as well as all that is listed in the contract.Color plate is provided.</p>
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														6/10
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user09.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user10.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user08.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+				            		<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Mobile App #58</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">It is required to develop a mobile app that will meet all modern standards and be as user-friendly as possible. Also, don't forget about data protection.</p>
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														12/24
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user06.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+									<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Online Store #57</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">Develop an online store of electronic devices for the provided layout, as wll as develop a mobile version for it. The story must be installed on any popular CMS.</p>
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														22/39
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user02.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user03.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user04.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+									<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Landing Page #59</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At recusandae aperiam voluptatem commodi aliquam omnis dolores qui? Temporibus distinctio consequuntur, atque sapiente accusantium officiis laborum ad alias incidunt necessitatibus dolorum.</p>
+												
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														2/5
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user02.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user03.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+				            		<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Software update #60</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quisquam! Eligendi iste, molestiae accusantium fugiat temporibus, eos iure recusandae illum quas veritatis perspiciatis culpa, nihil tenetur, eveniet atque numquam tempore!</p>
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														39/50
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user03.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user04.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+									<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Server gateway #61</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nobis nesciunt molestiae at sit dicta laboriosam velit similique earum debitis fugiat impedit necessitatibus maiores, amet, minus aliquam, aperiam sint quam?</p>
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														14/15
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user06.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user08.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user09.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+									<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Online Store #57</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">Develop an online store of electronic devices for the provided layout, as wll as develop a mobile version for it. The story must be installed on any popular CMS.</p>
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														22/39
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user02.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user03.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user04.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+									<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Branding Rocket #56</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">To rebrand Rocket App, you need to develop a new logo for the layout that was provided, as well as all that is listed in the contract.Color plate is provided.</p>
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														6/10
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user09.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user10.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user08.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+				            		<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+				            			<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Mobile App #58</h5>
+												<div class="card-dropdown">
+												  <i class="menu-drop dripicons-chevron-down"></i>
+												  <div class="card-dropdown-content">
+												    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+												    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+												    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+												  </div>
+												</div>
+											</div>
+											<div class="card-b ">
+												<p class="card-desc">It is required to develop a mobile app that will meet all modern standards and be as user-friendly as possible. Also, don't forget about data protection.</p>
+												<div class="project-footer">
+													<p class="project-checklist">
+														<i class="dripicons-checklist"></i>
+														12/24
+													</p>
+													<div class="project-assign">
+														<a href="#"><img src="img/users/user06.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+														<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+				            		</div>
+				            	</div>  
+				            </div>
+				            <div role="tabpanel" class="tab-pane animated fadeInUp" id="tasks">
+								<div class="row">
+									<div class="main-table-card col-sm-12 m-b-30">
+										<h3 class="tab-title">Tasks <span><a href="#">+</a></span></h3>
+										<div class="card-box">
+											<div class="card-h">
+												<h5 class="card-caption">Company App Redesign 
+												 <span class="task-num-tabpanel">(2/5)</span>
+												 <span class="task-edit"><a href="3.html">Edit</a> | <a href="#">Unpin from top</a></span>
+												 <i class="dripicons-pin"></i>
+												</h5>
+											</div>
+											<div class="card-b">
+												<div class="main-t-table table-responsive">
+													<table class="table">
+													  <tbody>
+													    <tr>
+													      <td class="table-num">01</td>
+													      <td class="table-name">Create the new company logo in 3 different styles <span><a href="#"><i class="dripicons-message"></i>20</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															75%		      	
+													      </td>
+													      <td class="table-status panding">MEDIUM</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user06.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+														<tr>
+													      <td class="table-num">02</td>
+													      <td class="table-name">Main navigation u[date to include all the new pages  inc...<span><a href="#"><i class="dripicons-message"></i>16</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															83%		      	
+													      </td>
+													      <td class="table-status rejected">URGENT</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user10.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user08.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													    <tr>
+													      <td class="table-num">03</td>
+													      <td class="table-name">Create 25 icons for the new mobile app <span><a href="#"><i class="dripicons-message"></i>5</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															49%		      	
+													      </td>
+													      <td class="table-status approved">NOT URGENT</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user06.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													    <tr>
+													      <td class="table-num">04</td>
+													      <td class="table-name">Remove the files for the new landing page to fit... <span><a href="#"><i class="dripicons-message"></i>13</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															100%		      	
+													      </td>
+													      <td class="table-status done">DONE</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user10.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													    <tr>
+													      <td class="table-num">05</td>
+													      <td class="table-name">Upload the files for the new contact page to the de... <span><a href="#"><i class="dripicons-message"></i>56</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															100%		      	
+													      </td>
+													      <td class="table-status done">DONE</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user02.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													  </tbody>
+													</table>
+												</div>
+											</div>
+											<div class="card-h">
+												<h5 class="card-caption">Random Design Tasks 
+												 <span class="task-num-tabpanel">(11/28)</span>
+												 <span class="task-edit"><a href="3.html">Edit</a> | <a href="#">Pin on top</a></span>
+												</h5>
+											</div>
+											<div class="card-b">
+												<div class="main-t-table table-responsive">
+													<table class="table">
+													  <tbody>
+													    <tr>
+													      <td class="table-num">01</td>
+													      <td class="table-name">We need a full set of banners for our new...<span><a href="#"><i class="dripicons-message"></i>5</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															12%		      	
+													      </td>
+													      <td class="table-status approved">NOT URGENT</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user02.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user03.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user04.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+														<tr>
+													      <td class="table-num">02</td>
+													      <td class="table-name">Create a print banner for the new app<span><a href="#"><i class="dripicons-message"></i>1</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															17%		      	
+													      </td>
+													      <td class="table-status rejected">URGENT</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user06.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user08.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													    <tr>
+													      <td class="table-num">03</td>
+													      <td class="table-name">Create 25 icons for the new mobile app <span><a href="#"><i class="dripicons-message"></i>5</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															49%		      	
+													      </td>
+													      <td class="table-status panding">MEDIUM</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user09.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user10.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													    <tr>
+													      <td class="table-num">04</td>
+													      <td class="table-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  <span><a href="#"><i class="dripicons-message"></i>13</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															100%		      	
+													      </td>
+													      <td class="table-status done">DONE</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user10.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													    <tr>
+													      <td class="table-num">05</td>
+													      <td class="table-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. . <span><a href="#"><i class="dripicons-message"></i>56</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															100%		      	
+													      </td>
+													      <td class="table-status done">DONE</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user02.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													    <tr>
+													      <td class="table-num">06</td>
+													      <td class="table-name">Lorem ipsum dolor sit amet<span><a href="#"><i class="dripicons-message"></i>51</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															12%		      	
+													      </td>
+													      <td class="table-status approved">NOT URGENT</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user01.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user02.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user03.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user04.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user05.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+														<tr>
+													      <td class="table-num">07</td>
+													      <td class="table-name">Lorem ipsum dolor sit amet, consectetur adipisicing dolor.<span><a href="#"><i class="dripicons-message"></i>31</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															17%		      	
+													      </td>
+													      <td class="table-status rejected">URGENT</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user06.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user07.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user08.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>
+													    <tr>
+													      <td class="table-num">08</td>
+													      <td class="table-name">Lorem ipsum dolor sit amet, consectetur adipisicing... <span><a href="#"><i class="dripicons-message"></i>8</a></span></td>
+													      <td class="table-amount">
+													      	<i class="dripicons-loading"></i>
+															49%		      	
+													      </td>
+													      <td class="table-status panding">MEDIUM</td>
+													      <td class="table-users">
+															<a href="#"><img src="img/users/user09.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user10.jpg" alt="User image"></a>
+															<a href="#"><img src="img/users/user11.jpg" alt="User image"></a>
+													      </td>
+													      <td><button type="button" class="btn btn-outline-primary"><i class="dripicons-pencil"></i>Change</button></td>
+													    </tr>								    
+													  </tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+				            </div>
+				            <div role="tabpanel" class="tab-pane animated fadeInUp" id="members">
+								<div class="row">
+									<div class="col-sm-12 m-b-30">
+										<h3 class="tab-title">Members <span><a href="#">+</a></span></h3>
+										<div class="row">
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="#"><img src="img/users/user02.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="profile.html">Adelia Hess</a></div>
+																<div class="member-position">Project menager</div>
+																<div class="member-mail">adelia.hess@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user03.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Javier Smith</a></div>
+																<div class="member-position">Test engineer</div>
+																<div class="member-mail">javier.s@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user04.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Diana Seeger</a></div>
+																<div class="member-position">UX Designer</div>
+																<div class="member-mail">diana.s@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user05.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Fred Marker</a></div>
+																<div class="member-position">UI Developer</div>
+																<div class="member-mail">fred.marker@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user06.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Kacie Wong</a></div>
+																<div class="member-position">Web Developer</div>
+																<div class="member-mail">kacie.wong@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user07.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Kirk Taranto</a></div>
+																<div class="member-position">UX Designer</div>
+																<div class="member-mail">kirk.taranto@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user08.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Julie Steward</a></div>
+																<div class="member-position">Web Developer</div>
+																<div class="member-mail">julie.s@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user09.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Ron Kohls</a></div>
+																<div class="member-position">UI Developer</div>
+																<div class="member-mail">ron.kohls@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user10.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Teresa Oyler</a></div>
+																<div class="member-position">UX Designer</div>
+																<div class="member-mail">teresa.oyler@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user11.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Colin Kirst</a></div>
+																<div class="member-position">Test engineer</div>
+																<div class="member-mail">colin.kirst@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user02.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Adelia Hess</a></div>
+																<div class="member-position">Project menager</div>
+																<div class="member-mail">adelia.hess@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user03.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Javier Smith</a></div>
+																<div class="member-position">Test engineer</div>
+																<div class="member-mail">javier.s@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user04.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Diana Seeger</a></div>
+																<div class="member-position">UX Designer</div>
+																<div class="member-mail">diana.s@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user05.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Fred Marker</a></div>
+																<div class="member-position">UI Developer</div>
+																<div class="member-mail">fred.marker@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-lg-6 col-xl-4 m-b-30">
+												<div class="card-box">
+													<div class="card-h">			
+														<div class="card-dropdown">
+														  <i class="menu-drop dripicons-chevron-down"></i>
+														  <div class="card-dropdown-content">
+														    <a href="index.html"><i class="dripicons-clockwise"></i>Update</a>
+														    <a href="index.html"><i class="dripicons-document-edit"></i>Edit Widget</a>
+														    <a href="index.html"><i class="dripicons-anchor"></i>FAQ</a>
+														  </div>
+														</div>
+													</div>
+													<div class="card-b">
+														<div class="member-header">
+															<a href="profile.html"><img src="img/users/user06.jpg" alt="User image"></a>
+															<div class="member-info">
+																<div class="member-name"><a href="#">Kacie Wong</a></div>
+																<div class="member-position">Web Developer</div>
+																<div class="member-mail">kacie.wong@aba.com</div>
+															</div>
+														</div>
+														<div class="member-footer">
+															<a href="#"><i class="fas fa-user"></i></a>
+															<a href="#"><i class="fab fa-twitter"></i></a>
+															<a href="#"><i class="fab fa-facebook-square"></i></a>
+															<a href="#"><i class="fab fa-dribbble"></i></a>
+															<a href="#"><i class="fas fa-at"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+				            </div>
+				        </div>
+					</div>
+				</div>
+			</div><!-- end #main-content -->
+			<footer id="footer">
+				<div class="row">
+					<div class="col-md-6">
+						Copyright &copy; 2019 Aba by <a href="#">zarko-m</a>
+					</div>
+					<div class="r-footer col-md-6"><a href="index.html">Terms of use</a> | <a href="index.html">Privacy Policy</a></div>
+				</div>
+			</footer><!-- end #footer -->
+		</main><!-- end .contentWrapper -->
+	</div> <!-- end .wrapper -->
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/fullcalendar-top-nav-config.js"></script>
+  	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  	<script src="js/bootstrap.min.js"></script>
+  	<!-- Chart js -->
+    <script src="js/chart.js/Chart.bundle.min.js"></script>
+    <script src="js/chart.js/Chart.min.js"></script>
+    <script src="js/chart.js/chartJs-config-team.js"></script>
+    <!-- perfect-scrollbar -->
+    <script src="js/perfect-scrollbar.min.js"></script>
+    <script src="js/perfect-scrollbar-config.js"></script>
+    <!-- bootstrap-select -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- bootstrap-tour -->
+	<script src="js/bootstrap-tour-standalone.min.js"></script>
+	<script src="js/bootstrap-tour-config.js"></script>
+
+	<!--Custom script -->
+	<script src="js/script.js"></script>
+</body>
+
+<!-- Mirrored from aba.zarko-m.com/preview/Default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2020 04:23:09 GMT -->
+</html>
