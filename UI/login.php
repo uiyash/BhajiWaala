@@ -55,21 +55,21 @@
 		<main class="container-fluid">
 			<div class="login-wrapper row">
 				<div class="login-l col-lg-4">
-					<form action="http://aba.zarko-m.com/preview/Default/index.html" class="login-form"
-						autocomplete="on">
+					<form action="inc/login.inc.php" class="login-form"
+						autocomplete="on" method="POST">
 						<img src="img/logo.png" alt="logo">
 						<p>Sign into your <span>DAXY</span> account</p>
 						<div class="txtb">
-							<input type="text" required="">
+							<input name="phone" type="text" required="">
 							<span data-placeholder="User Name"></span>
 						</div>
 						<div class="txtb">
-							<input type="password" required="">
+							<input name="pass" type="password" required="">
 							<span data-placeholder="Password"></span>
 						</div>
 						<div class="login-form-footer">
 							<a href="forgot.html">Forgot your password?</a>
-							<input type="submit" class="logbtn" value="Sign in">
+							<input name="submit" type="submit" class="logbtn" value="Sign in">
 						</div>
 						<div class="bottom-text" style="font-weight: 400;">
 							Need help? reach us at <span><a href="mailto:help@daxy.in">help@daxy.in</a></span><br><br>
