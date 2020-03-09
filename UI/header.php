@@ -9,7 +9,7 @@
     <meta name="author" content="zarko-m">
     <meta name="description" content="Admin Dashboard">
 
-	<title>DAXY | MS</title>
+	<title>DAXY🚖 | MS </title>
 
 	<!--Bootstrap v4.3.1-->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
