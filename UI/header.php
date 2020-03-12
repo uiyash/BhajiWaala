@@ -1,12 +1,14 @@
+<?php
+error_reporting(0);
+ini_set('display_errors', 0); 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from aba.zarko-m.com/preview/Default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2020 04:17:54 GMT -->
 <head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="zarko-m">
+<meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Admin Dashboard">
 
 	<title>DAXY🚖 | MS </title>

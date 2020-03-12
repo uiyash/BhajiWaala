@@ -1,3 +1,5 @@
+<body id="day-mode">
+	<div class="wrapper">
 <!-- Side navigation -->
 <aside class="side-nav scroll">
 			<div class="smartphone-menu-trigger"><i class="dripicons-align-justify"></i></div>
@@ -16,23 +18,24 @@
 					</a>
 				</li>
 				<li class="sideBox-item">
-					<a href="team.php">
+					<a href="create-order.php">
+						<i class="sideBox-item-icon dripicons-pencil"></i>
+					    <span class="sideBox-item-name">Create order</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
+					<a href="add-hotel.php">
 						<i class="sideBox-item-icon dripicons-heart"></i>
-					    <span class="sideBox-item-name">Team</span>
+					    <span class="sideBox-item-name">Add Hotel</span>
 					</a>
 				</li>
 				<li class="sideBox-item">
-					<a href="social.php">
+					<a href="add-seller.php">
 						<i class="sideBox-item-icon dripicons-user-group"></i>
-					    <span class="sideBox-item-name">Social</span>
+					    <span class="sideBox-item-name">Add vendor</span>
 					</a>
 				</li>
-				<li class="sideBox-item">
-					<a href="mail.php">
-						<i class="sideBox-item-icon dripicons-mail"></i>
-					    <span class="sideBox-item-name">Email</span>
-					</a>
-				</li>
+				
 				<li class="sideBox-item">
 					<a class="dropdown-section">
 						<i class="sideBox-item-icon dripicons-view-apps"></i>
@@ -185,7 +188,7 @@
 							</div>
 							<a class="dropdown-item" href="support.php"><i class="dripicons-anchor"></i> FAQ</a>
 					    	<a class="dropdown-item" href="support.php"><i class="dripicons-ticket"></i> Support</a>
-							<a class="dropdown-item" href="login.php"><i class="dripicons-exit"></i> Sign out</a>
+							<a class="dropdown-item" href="logout.php"><i class="dripicons-exit"></i> Sign out</a>
 						</div>
 					</div>
 				</div>
@@ -278,3 +281,5 @@
 					</a>
 				</div>
 			</nav><!-- end #top-nav -->
+			
+			
