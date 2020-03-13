@@ -35,6 +35,12 @@
 					    <span class="sideBox-item-name">Add vendor</span>
 					</a>
 				</li>
+				<li class="sideBox-item">
+					<a href="add-product.php">
+						<i class="sideBox-item-icon dripicons-user-group"></i>
+					    <span class="sideBox-item-name">Add Product</span>
+					</a>
+				</li>
 				
 				<li class="sideBox-item">
 					<a class="dropdown-section">

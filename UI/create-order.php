@@ -16,8 +16,8 @@ $result= mysqli_query($conn,$sql);
      echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
      } ?>
     </select>
-    
-  </div>       
+  </div>
+
 <button name="submit" type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
