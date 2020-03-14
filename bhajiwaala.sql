@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 09, 2020 at 11:19 AM
+-- Generation Time: Mar 14, 2020 at 11:08 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -30,12 +30,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `customer` (
   `id` int(11) NOT NULL,
+  `cid` int(11) NOT NULL,
   `name` varchar(256) NOT NULL,
   `phone` varchar(256) NOT NULL,
   `email` varchar(256) NOT NULL,
   `address` varchar(256) NOT NULL,
   `gstin` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`id`, `cid`, `name`, `phone`, `email`, `address`, `gstin`) VALUES
+(1, 1, 'Karan patil', '8169157715', 'Karan2000apatil@gmail.com', 'N m joshi marg', 'G15232'),
+(2, 1, 'Love it restarunt', '8912981212', 'Loveit@c.in', 'N m joshi marg', '#ihasiudhi');
 
 -- --------------------------------------------------------
 
@@ -78,10 +87,20 @@ CREATE TABLE `invoice` (
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `name` varchar(256) NOT NULL,
+  `name` varchar(256) CHARACTER SET utf8 DEFAULT NULL,
+  `marathi` varchar(256) CHARACTER SET utf8 NOT NULL,
+  `hindi` varchar(256) CHARACTER SET utf8 NOT NULL,
   `weight_type` varchar(256) NOT NULL,
-  `gst` varchar(256) NOT NULL
+  `gst` varchar(256) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `user_id`, `name`, `marathi`, `hindi`, `weight_type`, `gst`) VALUES
+(7, 1, 'Onion', 'कांदा', 'कांदा', 'Kg', ''),
+(8, 1, ' green beans', 'फरसबी', 'फरसबी', 'Kg', '');
 
 -- --------------------------------------------------------
 
@@ -91,12 +110,20 @@ CREATE TABLE `products` (
 
 CREATE TABLE `seller` (
   `id` int(11) NOT NULL,
+  `cid` int(11) NOT NULL,
   `name` varchar(256) NOT NULL,
   `phone` varchar(256) NOT NULL,
   `email` varchar(256) NOT NULL,
   `address` varchar(256) NOT NULL,
   `gstin` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `seller`
+--
+
+INSERT INTO `seller` (`id`, `cid`, `name`, `phone`, `email`, `address`, `gstin`) VALUES
+(1, 1, 'Yash karade', '9892440489', 'Yash@dayx.in', 'Opposite rani bagh', 'G1266');
 
 -- --------------------------------------------------------
 
@@ -188,7 +215,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `C_order`
@@ -206,13 +233,13 @@ ALTER TABLE `invoice`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `seller`
 --
 ALTER TABLE `seller`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `S_order`
