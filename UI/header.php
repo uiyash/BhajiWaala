@@ -19,7 +19,7 @@ session_start();
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Font-awesome -->
-	<link rel="stylesheet" href="../../../use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<!--dripicons -->
 	<link href="css/dripicons.css" rel="stylesheet">
 	<!-- fullcalendar -->

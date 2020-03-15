@@ -13,7 +13,7 @@ include_once('header.php'); ?>
 
 			<!-- PLAY WITH THIS BEGIN-->
 			<div id="content-header">
-				<div class="header-name animated fadeInUp">
+				<div class="header-name animated">
 					<h1><span>Manage Hotels</span></h1>
 					<p>“There is only one boss. The customer. And he can fire everybody in the company from the chairman
 						on down, simply by spending his money somewhere else.” -Sam Walton</p>
@@ -94,7 +94,7 @@ include_once('header.php'); ?>
 													<table class="table display" id="data-table">
 														<thead>
 															<tr>
-																<th scope="col">Name</th>
+																<th class='sorting' scope="col">Name</th>
 																<th scope="col">Account</th>
 																<th scope="col">Amount</th>
 																<th scope="col">Status</th>
