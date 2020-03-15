@@ -60,3 +60,9 @@ session_start();
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<body id="day-mode">
+	<div class="wrapper">
+		<?php include_once('sidebar.php');?>
+		<main class="contentWrapper container-fluid">
+
+			<?php include_once('navbar.php');?>

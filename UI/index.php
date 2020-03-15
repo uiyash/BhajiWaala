@@ -7,14 +7,9 @@ if(!strcmp("admin",$_SESSION['privilege'])==0)
  echo "<script>window.open('login.php','_self')</script>";
 
 } 
-include_once('header.php');
-?>
-<body id="day-mode">
-	<div class="wrapper">
-	<?php 
-include_once('navbar.php');
-?>
-			<!-- Header -->
+include_once('header.php'); ?>
+
+		
 			<div id="content-header">
 				<div class="header-name">
 					<h1 class="tour-step-one">Hi, <span>Anthony</span></h1>
@@ -32,8 +27,7 @@ include_once('navbar.php');
 					<p class="title">Pending tasks</p>
 					<span>103</span>
 				</div>
-			</div><!-- end #content-header -->
-			<!-- Main content -->
+			</div>
 			<div id="main-content">
 				<div class="row main-data">
 					<div class="users-card col-md-12 col-lg-6 col-xl-3 m-b-30">
@@ -840,7 +834,8 @@ include_once('navbar.php');
 						</div>
 					</div>
 				</div>
-			</div><!-- end #main-content -->
-			<?php
-			include_once('footer.php');
-			?>
+			</div>
+
+
+
+<?php include_once('footer.php');?>

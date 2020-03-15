@@ -57,7 +57,7 @@
 				<div class="login-l col-lg-4">
 					<form action="inc/login.inc.php" class="login-form"
 						autocomplete="on" method="POST">
-						<img src="img/logo.png" alt="logo">
+						<img style='margin-top: 20px;' src="img/logo.png" alt="logo">
 						<p>Sign into your <span>DAXY</span> account</p>
 						<div class="txtb">
 							<input name="phone" type="text" required="">
