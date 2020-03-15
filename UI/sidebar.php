@@ -42,17 +42,15 @@
 				
 				<li class="sideBox-item">
 					<a class="dropdown-section">
-						<i class="sideBox-item-icon dripicons-view-apps"></i>
-					    <span class="sideBox-item-name">Apps</span>
+						<i class="sideBox-item-icon dripicons-gear"></i>
+					    <span class="sideBox-item-name">Manage</span>
 					    <i class="sideBox-item-arrow dripicons-chevron-down" aria-hidden="true"></i>
 					</a>
 				  <div class="dropdown-container animated zoomIn">
 				  	<div class="dropdown-menu-wrapper">
-					    <a class="dropdown-item" href="support.php">Support Center</a>
-					    <a class="dropdown-item" href="tickets.php">Tickets</a>
-					    <a class="dropdown-item" href="calendar.php">Calendar</a>
-					    <a class="dropdown-item" href="todo.php">To Do</a>
-					    <a class="dropdown-item" href="view-project.php">View Project</a>
+					    <a class="dropdown-item" href="manage-hotel.php">Hotels</a>
+					    <a class="dropdown-item" href="manage-vendor.php">Vendors</a>
+					    <a class="dropdown-item" href="manage-product.php">Products</a>
 					</div>
 				  </div>
 				</li>

@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="zarko-m">
-	<meta name="description" content="Admin Dashboard">
+	<meta name="author" content="Team-Daxy">
+	<meta name="description" content="Managements softwares that are safe, smooth and sexxy Contact: 8779113007">
 
-	<title>DAXY MS</title>
+	<title>DAXY🚖 | MS </title>
 
 	<!--Bootstrap v4.3.1-->
 	<link href="css/bootstrap.min.css" rel="stylesheet">

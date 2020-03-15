@@ -9,8 +9,9 @@ session_start();
 <meta charset="windows-1252">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Admin Dashboard">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Team-Daxy">
+    <meta name="description" content="Managements softwares that are safe, smooth and sexxy Contact: 8779113007">
 
 	<title>DAXY🚖 | MS </title>
 
