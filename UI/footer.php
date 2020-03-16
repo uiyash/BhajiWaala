@@ -19,8 +19,9 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Chart js -->
-	<script src="js/chart.js/Chart.bundle.min.js"></script>
-	<script src="js/chart.js/Chart.min.js"></script>
+    <script src="js/chart.js/Chart.bundle.min.js"></script>
+    <script src="js/chart.js/Chart.min.js"></script>
+    <script src="js/chart.js/chartJs-config-index.js"></script>
 	<!-- perfect-scrollbar -->
 	<script src="js/perfect-scrollbar.min.js"></script>
 	<script src="js/perfect-scrollbar-config.js"></script>
