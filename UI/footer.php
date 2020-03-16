@@ -35,6 +35,8 @@
 
 	<!--Custom script -->
 	<script src="js/script.js"></script>
+	<script src="js/my.js"></script>
+
 </body>
 
 </html>

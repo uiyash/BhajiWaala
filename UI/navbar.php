@@ -26,7 +26,7 @@
 						<div class="dropdown-menu-wrapper">
 							<a class="dropdown-item" href="profile.html"><i class="dripicons-user"></i> Profile</a>
 							<a class="dropdown-item" href="#"><i class="dripicons-toggles"></i> Settings</a>
-							<div id="dark-toggle" class="dropdown-item"> Dark mode:
+							<div id="dark-toggle" class="dropdown-item"><span id='dark-toggle-text'> Dark mode:</span>
 								<label class="mode-container">
 									<input type="checkbox">
 									<span class="checkmark"></span>

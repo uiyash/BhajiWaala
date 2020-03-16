@@ -55,7 +55,6 @@ include_once('header.php');
 											<div style="padding: 20px;" class="card-b">
 												<div class="row">
 													<div class="col-lg-12">
-														<form action="inc/add-hotel.inc.php" method="POST">
 															<div class="form-group m-b-15">
 																<label for="name">Name</label>
 																<input name="name" type="text" id="name"
@@ -121,12 +120,12 @@ include_once('header.php');
 															echo '
 															<tr>
 																<td>'.$c.'</td>
-																<td class="table-name">'.$row['name'].'</td>
+																<td class="table-name"><img src="img/users/hotel.png"
+																alt="User image">'.$row['name'].'</td>
 																<td class="table-amount">'.$row['phone'].'</td>
 																<td class="table-acc"><a href="#">'.$row['email'].'</a></td>
 																<td class="table-amount">'.$row['address'].'</td>
 																<td class="table-amount">'.$row['gstin'].'</td>
-																y
 																<td><button type="button"
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-pencil"></i>Edit</button>
