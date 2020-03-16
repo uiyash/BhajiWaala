@@ -6,9 +6,19 @@ if(!strcmp("admin",$_SESSION['privilege'])==0)
   // exit();
  echo "<script>window.open('login.php','_self')</script>";
 
-} 
-include_once('header.php'); ?>
+}
+include_once('connect.php');
 
+$cid=$_SESSION['id'];
+$sql="SELECT * FROM customer WHERE cid=".$cid; 
+$result=mysqli_query($conn,$sql);
+
+include_once('header.php');
+ ?>
+
+
+
+			
 
 
 			<!-- PLAY WITH THIS BEGIN-->
@@ -105,14 +115,18 @@ include_once('header.php'); ?>
 															</tr>
 														</thead>
 														<tbody>
+														<?php
+														$c=1;
+														 while($row = mysqli_fetch_assoc($result)) {
+															echo '
 															<tr>
-																<td class="table-num">01</td>
-																<td class="table-name"><img src="img/users/hotel.png"
-																		alt="User image">Ron Kohls</td>
-																<td class="table-amount">9322244007</td>
-																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
-																<td class="table-name">N M Joshi Marg</td>
-																<td class="table-name">GSTIN</td>
+																<td>'.$c.'</td>
+																<td class="table-name">'.$row['name'].'</td>
+																<td class="table-amount">'.$row['phone'].'</td>
+																<td class="table-acc"><a href="#">'.$row['email'].'</a></td>
+																<td class="table-amount">'.$row['address'].'</td>
+																<td class="table-amount">'.$row['gstin'].'</td>
+																y
 																<td><button type="button"
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-pencil"></i>Edit</button>
@@ -121,75 +135,10 @@ include_once('header.php'); ?>
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-wrong"></i>Remove</button>
 																</td>
-															</tr>
-															<tr>
-																<td class="table-num">02</td>
-																<td class="table-name"><img src="img/users/hotel.png"
-																		alt="User image">Ron Kohls</td>
-																<td class="table-amount">9322244007</td>
-																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
-																<td class="table-name">N M Joshi Marg</td>
-																<td class="table-name">GSTIN</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
-															</tr>
-															<tr>
-																<td class="table-num">03</td>
-																<td class="table-name"><img src="img/users/hotel.png"
-																		alt="User image">Jon Kohls</td>
-																<td class="table-amount">9322244007</td>
-																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
-																<td class="table-name">N M Joshi Marg</td>
-																<td class="table-name">GSTIN</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
-															</tr>
-															<tr>
-																<td class="table-num">01</td>
-																<td class="table-name"><img src="img/users/hotel.png"
-																		alt="User image">Ron Kohls</td>
-																<td class="table-amount">9322244007</td>
-																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
-																<td class="table-name">N M Joshi Marg</td>
-																<td class="table-name">GSTIN</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
-															</tr>
-															<tr>
-																<td class="table-num">01</td>
-																<td class="table-name"><img src="img/users/hotel.png"
-																		alt="User image">Ron Kohls</td>
-																<td class="table-amount">9322244007</td>
-																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
-																<td class="table-name">N M Joshi Marg</td>
-																<td class="table-name">GSTIN</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
-															</tr>
+															</tr>';
+															$c++;
+														}
+														?>
 														</tbody>
 													</table>
 												</div>
