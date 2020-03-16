@@ -2,6 +2,13 @@
 error_reporting(0);
 ini_set('display_errors', 0); 
 session_start();
+$uid=$_SESSION['id'];
+$msql="SELECT * From user where id=".$uid;
+$mresult= mysqli_query($conn,$msql);
+$mrow= mysqli_fetch_array($mresult);
+
+$setting = json_decode($mrow['settings']);
+// echo $setting->mode;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +68,12 @@ session_start();
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="day-mode">
+<body id="<?php 
+if ($setting->mode==1) {
+echo 'dark';
+}else{
+	echo 'day';
+}?>-mode">
 	<div class="wrapper">
 		<?php include_once('sidebar.php');?>
 		<main class="contentWrapper container-fluid">

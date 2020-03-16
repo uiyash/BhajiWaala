@@ -7,14 +7,21 @@ if(!strcmp("admin",$_SESSION['privilege'])==0)
  echo "<script>window.open('login.php','_self')</script>";
 
 } 
-include_once('header.php'); ?>
+include_once('connect.php');
+include_once('header.php'); 
+
+$cid=$_SESSION['id'];
+$sql="SELECT * FROM products WHERE user_id=".$cid; 
+$result=mysqli_query($conn,$sql);
+
+?>
 
 
 
 			<!-- PLAY WITH THIS BEGIN-->
 			<div id="content-header">
 				<div class="header-name animated fadeInUp">
-					<h1><span>Manage Hotels</span></h1>
+					<h1><span>Manage Products</span></h1>
 					<p>“There is only one boss. The customer. And he can fire everybody in the company from the chairman
 						on down, simply by spending his money somewhere else.” -Sam Walton</p>
 				</div>
@@ -26,7 +33,7 @@ include_once('header.php'); ?>
 						<ul class="team-tablist nav justify-content-center" role="tablist">
 							<li class="active">
 								<a class="active" href="#b-f-elements" role="tab" data-toggle="tab"
-									aria-expanded="false">Add New Hotel</a>
+									aria-expanded="false">Add New product</a>
 							</li>
 							<li class="">
 								<a href="#f-Uploads" role="tab" data-toggle="tab" aria-expanded="true">Edit/Remove
@@ -40,39 +47,33 @@ include_once('header.php'); ?>
 									<div class="col-lg-6 m-b-30">
 										<div class="card-box">
 											<div class="card-h">
-												<h5 class="card-caption">Add new Hotel</h5>
+												<h5 class="card-caption">Add new product</h5>
 											</div>
 											<div style="padding: 20px;" class="card-b">
 												<div class="row">
 													<div class="col-lg-12">
-														<form action="inc/add-pro.inc.php" method="POST">
-															<div class="form-group m-b-15">
-																<label for="simpleinput">Name</label>
-																<input name="name" type="text" id="simpleinput"
-																	class="form-control">
-															</div>
-															<div class="form-group m-b-15">
-																<label for="example-email">Email</label>
-																<input name="email" type="email" id="example-email"
-																	name="example-email" class="form-control"
-																	placeholder="Email"> </div>
-															<div class="form-group m-b-15"> <label
-																	for="example-palaceholder">Phone
-																	No</label>
-																<input name="phone" type="number"
-																	id="example-palaceholder" class="form-control"
-																	placeholder="placeholder"> </div>
-															<div class="form-group m-b-15"> <label
-																	for="example-textarea">Address</label>
-																<textarea name="address" class="form-control"
-																	id="example-textarea" rows="5"></textarea> </div>
-															<div class="form-group m-b-15"> <label
-																	for="example-readonly">GSTIN</label>
-																<input name="gstin" type="text" id="example-readonly"
-																	class="form-control" value="Readonly value"> </div>
-															<button name="submit" type="submit"
-																class="btn btn-primary">Submit</button>
-														</form>
+													<form action="inc/add.php" method="POST">
+
+<div class="col-md-6">
+<label for="product">Enter Product Name</label>
+  <input name="name" type="text" class="form-control" placeholder="Name">
+</div>
+<div class="col-md-6">
+  <input name="marathi" type="text" class="form-control" placeholder="Marathi Name">
+</div>
+<div class="col-md-6">
+  <input name="hindi" type="text" class="form-control" placeholder="Hindi Name">
+</div>
+<div class="col-md-6">
+  <input name="weight" type="text" class="form-control" placeholder="Enter weight">
+</div>
+<div class="col-md-6">
+  <input name="gst" type="text" class="form-control" placeholder="Enter gst">
+</div>
+<input name="stat" type="text" id="example-readonly" class="form-control" value="pro" hidden>
+
+<button name="submit" type="submit" class="btn btn-primary">Submit</button>
+</form>
 													</div>
 
 
@@ -94,21 +95,28 @@ include_once('header.php'); ?>
 													<table class="table display" id="data-table">
 														<thead>
 															<tr>
+																<th scope="col">No</th>
 																<th scope="col">Name</th>
-																<th scope="col">Account</th>
-																<th scope="col">Amount</th>
-																<th scope="col">Status</th>
+																<th scope="col">Marathi</th>
+																<th scope="col">Hindi</th>
+																<th scope="col">Weight Type</th>
+																<th scope="col">Gst </th>
 																<th scope="col">Edit</th>
 																<th scope="col">Remove</th>
 															</tr>
 														</thead>
 														<tbody>
+														<?php
+														$c=1;
+														 while($row = mysqli_fetch_assoc($result)) {
+															echo '
 															<tr>
-																<td class="table-name"><img src="img/users/user09.jpg"
-																		alt="User image">Ron Kohls</td>
-																<td class="table-acc"><a href="#">@ron_k</a></td>
-																<td class="table-amount">$1500,00</td>
-																<td class="table-status approved">Approved</td>
+																<td>'.$c.'</td>
+																<td class="table-name">'.$row['name'].'</td>
+																<td class="table-name">'.$row['marathi'].'</td>
+																<td class="table-name">'.$row['hindi'].'</td>
+																<td class="table-amount">'.$row['weight_type'].'</td>
+																<td class="table-amount">'.$row['gst'].'</td>
 																<td><button type="button"
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-pencil"></i>Edit</button>
@@ -117,67 +125,10 @@ include_once('header.php'); ?>
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-wrong"></i>Remove</button>
 																</td>
-															</tr>
-															<tr>
-																<td class="table-name"><img src="img/users/user08.jpg"
-																		alt="User image">Julie Steward</td>
-																<td class="table-acc"><a href="#">@julies</a></td>
-																<td class="table-amount">$2650,00</td>
-																<td class="table-status approved">Approved</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
-															</tr>
-															<tr>
-																<td class="table-name"><img src="img/users/user04.jpg"
-																		alt="User image">Diana Seeger</td>
-																<td class="table-acc"><a href="#">@diana.123</a></td>
-																<td class="table-amount">$3000,00</td>
-																<td class="table-status rejected">Rejected</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
-															</tr>
-															<tr>
-																<td class="table-name"><img src="img/users/user10.jpg"
-																		alt="User image">Teresa Oyler</td>
-																<td class="table-acc"><a href="#">@teresaa</a></td>
-																<td class="table-amount">$900,00</td>
-																<td class="table-status panding">Pending</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
-															</tr>
-															<tr>
-																<td class="table-name"><img src="img/users/user03.jpg"
-																		alt="User image">Javier Smith</td>
-																<td class="table-acc"><a href="#">@j_smith</a></td>
-																<td class="table-amount">$4500,00</td>
-																<td class="table-status panding">Pending</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
-															</tr>
+															</tr>';
+															$c++;
+														}
+														?>
 														</tbody>
 													</table>
 												</div>
