@@ -118,7 +118,7 @@ include_once('header.php');
 														$c=1;
 														 while($row = mysqli_fetch_assoc($result)) {
 															echo '
-															<tr>
+															<tr id="'.$c.'">
 																<td>'.$c.'</td>
 																<td class="table-name"><img src="img/users/hotel.png"
 																alt="User image">'.$row['name'].'</td>
@@ -153,7 +153,18 @@ include_once('header.php');
 			<!-- PLAY WITH THIS END -->
 
 
+			<script>
+	document.querySelector("body").onload = function () { myFunction() };
 
+	function myFunction() {
+		$('#data-table').Tabledit({
+    url: 'example.php',
+    columns: {
+        identifier: [0, 'id'],
+        editable: [[2, 'Name']]
+    }
+});
+</script>
 
 
 

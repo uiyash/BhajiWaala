@@ -32,7 +32,8 @@
 	<!-- DataTables -->
 	<script src="js/DataTables/datatables.min.js"></script>
 	<script src="js/DataTables/dataTables-config.js"></script>
-
+	<!-- TableEditor  -->
+	<script src="js/TableEditor/jquery.tabledit.js"></script>
 	<!--Custom script -->
 	<script src="js/script.js"></script>
 	<script src="js/my.js"></script>
