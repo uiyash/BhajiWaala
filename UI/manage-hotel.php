@@ -47,29 +47,29 @@ include_once('header.php'); ?>
 													<div class="col-lg-12">
 														<form action="inc/add-hotel.inc.php" method="POST">
 															<div class="form-group m-b-15">
-																<label for="simpleinput">Name</label>
-																<input name="name" type="text" id="simpleinput"
-																	class="form-control">
+																<label for="name">Name</label>
+																<input name="name" type="text" id="name"
+																	class="form-control" placeholder="Raj Kapoor">
 															</div>
-															<div class="form-group m-b-15">
-																<label for="example-email">Email</label>
-																<input name="email" type="email" id="example-email"
-																	name="example-email" class="form-control"
-																	placeholder="Email"> </div>
 															<div class="form-group m-b-15"> <label
-																	for="example-palaceholder">Phone
+																	for="phone">Phone
 																	No</label>
-																<input name="phone" type="number"
-																	id="example-palaceholder" class="form-control"
-																	placeholder="placeholder"> </div>
+																<input name="phone" type="tel"
+																	id="phone" class="form-control"
+																	placeholder="8779113007" minlength="10" maxlength="10"> </div>
+															<div class="form-group m-b-15">
+																<label for="email">Email</label>
+																<input name="email" type="email" id="email"
+																	name="email" class="form-control"
+																	placeholder="raj@gmail.com"> </div>
 															<div class="form-group m-b-15"> <label
 																	for="example-textarea">Address</label>
 																<textarea name="address" class="form-control"
-																	id="example-textarea" rows="5"></textarea> </div>
+																	id="address" rows="1" placeholder="N M Joshi marg, Mumbai 27."></textarea> </div>
 															<div class="form-group m-b-15"> <label
 																	for="example-readonly">GSTIN</label>
 																<input name="gstin" type="text" id="example-readonly"
-																	class="form-control" value="Readonly value"> </div>
+																	class="form-control" placeholder="22XXXXXXXXXX123"> </div>
 															<button name="submit" type="submit"
 																class="btn btn-primary">Submit</button>
 														</form>
@@ -94,21 +94,25 @@ include_once('header.php'); ?>
 													<table class="table display" id="data-table">
 														<thead>
 															<tr>
-																<th class='sorting' scope="col">Name</th>
-																<th scope="col">Account</th>
-																<th scope="col">Amount</th>
-																<th scope="col">Status</th>
+																<th scope="col"><i class="fas fa-sort"></i> SR #</th>
+																<th scope="col"><i class="fas fa-sort"></i> Name </th>
+																<th scope="col"><i class="fas fa-sort"></i> Phone</th>
+																<th scope="col"><i class="fas fa-sort"></i> Email</th>
+																<th scope="col"><i class="fas fa-sort"></i> Address</th>
+																<th scope="col"><i class="fas fa-sort"></i> GSTIN</th>
 																<th scope="col">Edit</th>
 																<th scope="col">Remove</th>
 															</tr>
 														</thead>
 														<tbody>
 															<tr>
-																<td class="table-name"><img src="img/users/user09.jpg"
+																<td class="table-num">01</td>
+																<td class="table-name"><img src="img/users/hotel.png"
 																		alt="User image">Ron Kohls</td>
-																<td class="table-acc"><a href="#">@ron_k</a></td>
-																<td class="table-amount">$1500,00</td>
-																<td class="table-status approved">Approved</td>
+																<td class="table-amount">9322244007</td>
+																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
+																<td class="table-name">N M Joshi Marg</td>
+																<td class="table-name">GSTIN</td>
 																<td><button type="button"
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-pencil"></i>Edit</button>
@@ -119,11 +123,13 @@ include_once('header.php'); ?>
 																</td>
 															</tr>
 															<tr>
-																<td class="table-name"><img src="img/users/user08.jpg"
-																		alt="User image">Julie Steward</td>
-																<td class="table-acc"><a href="#">@julies</a></td>
-																<td class="table-amount">$2650,00</td>
-																<td class="table-status approved">Approved</td>
+																<td class="table-num">02</td>
+																<td class="table-name"><img src="img/users/hotel.png"
+																		alt="User image">Ron Kohls</td>
+																<td class="table-amount">9322244007</td>
+																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
+																<td class="table-name">N M Joshi Marg</td>
+																<td class="table-name">GSTIN</td>
 																<td><button type="button"
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-pencil"></i>Edit</button>
@@ -134,11 +140,13 @@ include_once('header.php'); ?>
 																</td>
 															</tr>
 															<tr>
-																<td class="table-name"><img src="img/users/user04.jpg"
-																		alt="User image">Diana Seeger</td>
-																<td class="table-acc"><a href="#">@diana.123</a></td>
-																<td class="table-amount">$3000,00</td>
-																<td class="table-status rejected">Rejected</td>
+																<td class="table-num">03</td>
+																<td class="table-name"><img src="img/users/hotel.png"
+																		alt="User image">Jon Kohls</td>
+																<td class="table-amount">9322244007</td>
+																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
+																<td class="table-name">N M Joshi Marg</td>
+																<td class="table-name">GSTIN</td>
 																<td><button type="button"
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-pencil"></i>Edit</button>
@@ -149,11 +157,13 @@ include_once('header.php'); ?>
 																</td>
 															</tr>
 															<tr>
-																<td class="table-name"><img src="img/users/user10.jpg"
-																		alt="User image">Teresa Oyler</td>
-																<td class="table-acc"><a href="#">@teresaa</a></td>
-																<td class="table-amount">$900,00</td>
-																<td class="table-status panding">Pending</td>
+																<td class="table-num">01</td>
+																<td class="table-name"><img src="img/users/hotel.png"
+																		alt="User image">Ron Kohls</td>
+																<td class="table-amount">9322244007</td>
+																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
+																<td class="table-name">N M Joshi Marg</td>
+																<td class="table-name">GSTIN</td>
 																<td><button type="button"
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-pencil"></i>Edit</button>
@@ -164,11 +174,13 @@ include_once('header.php'); ?>
 																</td>
 															</tr>
 															<tr>
-																<td class="table-name"><img src="img/users/user03.jpg"
-																		alt="User image">Javier Smith</td>
-																<td class="table-acc"><a href="#">@j_smith</a></td>
-																<td class="table-amount">$4500,00</td>
-																<td class="table-status panding">Pending</td>
+																<td class="table-num">01</td>
+																<td class="table-name"><img src="img/users/hotel.png"
+																		alt="User image">Ron Kohls</td>
+																<td class="table-amount">9322244007</td>
+																<td class="table-acc"><a href="mailto:" target='_blank'>something@ron.com</a></td>
+																<td class="table-name">N M Joshi Marg</td>
+																<td class="table-name">GSTIN</td>
 																<td><button type="button"
 																		class="btn btn-outline-primary"><i
 																			class="dripicons-pencil"></i>Edit</button>
