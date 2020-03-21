@@ -40,6 +40,26 @@ mysqli_set_charset( $conn, 'utf8');
                 mysqli_query($conn, $sql1) or die(mysqli_error($conn));
      echo "<script>window.open('../index.php?stat=added','_self')</script>";
 
+}elseif($_POST['stat']=='order'){
+    $hotel =ucfirst(mysqli_real_escape_string($conn, $_POST['hotel']));
+    $date =ucfirst(mysqli_real_escape_string($conn, $_POST['date']));
+    $count =ucfirst(mysqli_real_escape_string($conn, $_POST['count']));
+    $arr=array();
+    // echo $count;
+while ($count != 0) {
+    $q = mysqli_real_escape_string($conn, $_POST['q_'.$count.'']);
+    $pro = mysqli_real_escape_string($conn, $_POST['id_'.$count.'']);
+    $price = mysqli_real_escape_string($conn, $_POST['price_'.$count.'']);
+    $array = array();
+$array=array('id' => $pro, 'q' => $q,'price'=>$price);;
+array_push($arr, $array);
+$count--;
+}
+$narr= json_encode($arr);      
+    $sql1="INSERT INTO `C_order`(`user_id`,`customer_id`,`products`,`date`) VALUES ('$cid','$hotel','$narr','$date');";
+                mysqli_query($conn, $sql1) or die(mysqli_error($conn));
+     echo "<script>window.open('../index.php?stat=o_added','_self')</script>";
+
 }else{
     echo "<script>window.open('../index.php?stat=submit','_self')</script>";
 }
