@@ -1,24 +1,25 @@
 <?php
 error_reporting(0);
-ini_set('display_errors', 0); 
+ini_set('display_errors', 0);
 session_start();
-$uid=$_SESSION['id'];
-$msql="SELECT * From user where id=".$uid;
-$mresult= mysqli_query($conn,$msql);
-$mrow= mysqli_fetch_array($mresult);
+$uid = $_SESSION['id'];
+$msql = "SELECT * From user where id=" . $uid;
+$mresult = mysqli_query($conn, $msql);
+$mrow = mysqli_fetch_array($mresult);
 
 $setting = json_decode($mrow['settings']);
 // echo $setting->mode;
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="windows-1252">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="windows-1252">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Team-Daxy">
-    <meta name="description" content="Managements softwares that are safe, smooth and sexxy Contact: 8779113007">
+	<meta name="description" content="Managements softwares that are safe, smooth and sexxy Contact: 8779113007">
 
 	<title>DAXY🚖 | MS </title>
 
@@ -39,7 +40,7 @@ $setting = json_decode($mrow['settings']);
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-tour-standalone.min.css">
 
 	<!-- Custom -->
-  	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.html" />
@@ -52,7 +53,7 @@ $setting = json_decode($mrow['settings']);
 	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -62,20 +63,21 @@ $setting = json_decode($mrow['settings']);
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="<?php 
-if ($setting->mode==1) {
-echo 'dark';
-}else{
-	echo 'day';
-}?>-mode">
+
+<body id="<?php
+			if ($setting->mode === 1) {
+				echo 'dark';
+			} else {
+				echo 'day';
+			} ?>-mode">
 	<div class="wrapper">
-		<?php include_once('sidebar.php');?>
+		<?php include_once('sidebar.php'); ?>
 		<main class="contentWrapper container-fluid">
 
-			<?php include_once('navbar.php');?>
+			<?php include_once('navbar.php'); ?>
