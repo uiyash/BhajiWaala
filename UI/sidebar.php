@@ -22,6 +22,12 @@
 					</a>
 				</li>
 				<li class="sideBox-item">
+					<a href="view-order.php">
+						<i class="sideBox-item-icon dripicons-pencil"></i>
+					    <span class="sideBox-item-name">View order</span>
+					</a>
+				</li>
+				<li class="sideBox-item">
 					<a href="add-hotel.php">
 						<i class="sideBox-item-icon dripicons-heart"></i>
 					    <span class="sideBox-item-name">Add Hotel</span>
