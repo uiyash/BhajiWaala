@@ -14,7 +14,7 @@ $result = mysqli_query($conn, $sql);
 include_once('header.php');
 ?>
 
-
+<!-- PLAY WITH THIS BEGIN-->
 <div id="content-header">
 	<div class="header-name">
 		<h1 class="tour-step-one">Hi, <span>Anthony</span></h1>
@@ -840,7 +840,7 @@ include_once('header.php');
 		</div>
 	</div>
 </div>
-
+<!-- PLAY WITH THIS END-->
 
 
 <?php include_once('footer.php'); ?>
