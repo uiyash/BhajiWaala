@@ -18,6 +18,7 @@ include_once('header.php');
 
 
 
+
 			
 
 
@@ -91,7 +92,7 @@ include_once('header.php');
 									</div>
 								</div>
 							</div>
-							<div role="tabpanel" class="tab-pane animated fadeInUp" id="f-Uploads">
+							<div role="tabKaranpanel" class="tab-pane animated fadeInUp" id="f-Uploads">
 								<div class="row">
 									<div class="main-table-card col-sm-12 m-b-30">
 										<div class="card-box">
@@ -100,7 +101,7 @@ include_once('header.php');
 											</div>
 											<div class="card-b" style="padding: 20px;">
 												<div class="main-t-table table-responsive">
-													<table class="table display" id="data-table">
+													<table class="table display" id="manage-hotel">
 														<thead>
 															<tr>
 																<th scope="col"><i class="fas fa-sort"></i> SR #</th>
@@ -109,31 +110,28 @@ include_once('header.php');
 																<th scope="col"><i class="fas fa-sort"></i> Email</th>
 																<th scope="col"><i class="fas fa-sort"></i> Address</th>
 																<th scope="col"><i class="fas fa-sort"></i> GSTIN</th>
-																<th scope="col">Edit</th>
-																<th scope="col">Remove</th>
+																<th scope="col">action</th>
+																
 															</tr>
 														</thead>
 														<tbody>
 														<?php
 														$c=1;
 														 while($row = mysqli_fetch_assoc($result)) {
+														 	?>
+															
+															<tr id="<?php echo $row['id']; ?>">
+															<?php	
+
 															echo '
-															<tr id="'.$c.'">
-																<td>'.$c.'</td>
+																<td>'.$row['id'].'</td>
 																<td class="table-name"><img src="img/users/hotel.png"
 																alt="User image">'.$row['name'].'</td>
 																<td class="table-amount">'.$row['phone'].'</td>
 																<td class="table-acc"><a href="#">'.$row['email'].'</a></td>
 																<td class="table-amount">'.$row['address'].'</td>
 																<td class="table-amount">'.$row['gstin'].'</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
+																
 															</tr>';
 															$c++;
 														}
@@ -153,21 +151,21 @@ include_once('header.php');
 			<!-- PLAY WITH THIS END -->
 
 
-			<script>
-	document.querySelector("body").onload = function () { myFunction() };
+<script>
 
-	function myFunction() {
-		$('#data-table').Tabledit({
-    url: 'example.php',
-    columns: {
-        identifier: [0, 'id'],
-        editable: [[2, 'Name']]
-    }
+$(document).ready(function(){
+	$('#manage-hotel').Tabledit({
+		deleteButton: true,
+		editButton: false,   	
+		columns: {
+		  identifier: [0, 'id'],                    
+		  editable: [[1, 'name'], [2, 'phone'], [3, 'email'], [4, 'address'], [5, 'gsLovetin']]
+		},
+		hideIdentifier: false,
+		url: 'inc/edit.php?stat=h'		
+	});
 });
 </script>
-
-
-
 
 
 <?php include_once('footer.php');?>

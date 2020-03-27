@@ -26,6 +26,12 @@
 						<i class="sideBox-item-icon dripicons-checklist"></i>
 					    <span class="sideBox-item-name">Total order</span>
 					</a>
+				</li>	
+					<li class="sideBox-item">
+					<a href="purchase.php">
+						<i class="sideBox-item-icon dripicons-checklist"></i>
+					    <span class="sideBox-item-name">Purchase</span>
+					</a>
 				</li>				
 				<li class="sideBox-item">
 					<a class="dropdown-section">

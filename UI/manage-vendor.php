@@ -100,40 +100,38 @@ $result=mysqli_query($conn,$sql);
 											</div>
 											<div class="card-b" style="padding: 20px;">
 												<div class="main-t-table table-responsive">
-													<table class="table display" id="data-table">
+													<table class="table display" id="manage-vendor">
 														<thead>
 															<tr>
-																<th scope="col"><i class="fas fa-sort"></i> SR #</th>
+																<th scope="col"><i class="fas fa-sort"></i> ID</th>
 																<th scope="col"><i class="fas fa-sort"></i> Name </th>
 																<th scope="col"><i class="fas fa-sort"></i> Phone</th>
 																<th scope="col"><i class="fas fa-sort"></i> Email</th>
 																<th scope="col"><i class="fas fa-sort"></i> Address</th>
 																<th scope="col"><i class="fas fa-sort"></i> GSTIN</th>
-																<th scope="col">Edit</th>
-																<th scope="col">Remove</th>
+																<th scope="col">Action</th>
+																
 															</tr>
 														</thead>
 														<tbody>
 														<?php
 														$c=1;
 														 while($row = mysqli_fetch_assoc($result)) {
+															
+														 	?>
+															
+															<tr id="<?php echo $row['id']; ?>">
+															<?php
 															echo '
-															<tr>
-																<td>'.$c.'</td>
+															
+																<td>'.$row['id'].'</td>
 																<td class="table-name">'.$row['name'].'</td>
 																<td class="table-amount">'.$row['phone'].'</td>
 																<td class="table-acc"><a href="#">'.$row['email'].'</a></td>
 																<td class="table-amount">'.$row['address'].'</td>
 																<td class="table-amount">'.$row['gstin'].'</td>
 																
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
+																
 															</tr>';
 															$c++;
 														}
@@ -154,7 +152,21 @@ $result=mysqli_query($conn,$sql);
 
 
 
+<script>
 
+$(document).ready(function(){
+	$('#manage-vendor').Tabledit({
+		deleteButton: true,
+		editButton: false,   	
+		columns: {
+		  identifier: [0, 'id'],                    
+		  editable: [[1, 'name'], [2, 'phone'], [3, 'email'], [4, 'address'], [5, 'gstin']]
+		},
+		hideIdentifier: false,
+		url: 'inc/edit.php?stat=v'		
+	});
+});
+</script>
 
 
 

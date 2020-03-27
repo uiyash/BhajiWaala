@@ -17,7 +17,6 @@ $result=mysqli_query($conn,$sql);
 ?>
 
 
-
 			<!-- PLAY WITH THIS BEGIN-->
 			<div id="content-header">
 				<div class="header-name animated fadeInUp">
@@ -92,7 +91,7 @@ $result=mysqli_query($conn,$sql);
 											</div>
 											<div class="card-b" style="padding: 20px;">
 												<div class="main-t-table table-responsive">
-													<table class="table display" id="data-table">
+													<table class="table display" id="manage-product">
 														<thead>
 															<tr>
 																<th scope="col">No</th>
@@ -101,30 +100,27 @@ $result=mysqli_query($conn,$sql);
 																<th scope="col">Hindi</th>
 																<th scope="col">Weight Type</th>
 																<th scope="col">Gst </th>
-																<th scope="col">Edit</th>
-																<th scope="col">Remove</th>
+																<th scope="col">Action</th>
+																
 															</tr>
 														</thead>
 														<tbody>
 														<?php
 														$c=1;
 														 while($row = mysqli_fetch_assoc($result)) {
+														 	?>
+															
+															<tr id="<?php echo $row['id']; ?>">
+															<?php	
 															echo '
-															<tr>
-																<td>'.$c.'</td>
+															
+																<td>'.$row['id'].'</td>
 																<td class="table-name">'.$row['name'].'</td>
 																<td class="table-name">'.$row['marathi'].'</td>
 																<td class="table-name">'.$row['hindi'].'</td>
 																<td class="table-amount">'.$row['weight_type'].'</td>
 																<td class="table-amount">'.$row['gst'].'</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-pencil"></i>Edit</button>
-																</td>
-																<td><button type="button"
-																		class="btn btn-outline-primary"><i
-																			class="dripicons-wrong"></i>Remove</button>
-																</td>
+																
 															</tr>';
 															$c++;
 														}
@@ -147,7 +143,20 @@ $result=mysqli_query($conn,$sql);
 
 
 
-
+<script>
+	$(document).ready(function(){
+	$('#manage-product').Tabledit({
+		deleteButton: true,
+		editButton: false,   		
+		columns: {
+		  identifier: [0, 'id'],                    
+		  editable: [[1, 'name'], [2, 'marathi'], [3, 'hindi'], [4, 'weight'], [5, 'gst']]
+		},
+		hideIdentifier: false,
+		url: 'inc/edit.php?stat=p'		
+	});
+});
+</script>
 
 
 <?php include_once('footer.php');?>

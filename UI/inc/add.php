@@ -50,18 +50,54 @@ while ($count != 0) {
     $q = mysqli_real_escape_string($conn, $_POST['q_'.$count.'']);
     $pro = mysqli_real_escape_string($conn, $_POST['id_'.$count.'']);
     $price = mysqli_real_escape_string($conn, $_POST['price_'.$count.'']);
-    $array = array();
-    if (isset($q)) {
-        
     
+    if (empty($q)) {
+// echo "null".$q;
+}else{
+    // echo "not null".$q;
+   $array = array();
 $array=array('id' => $pro, 'q' => $q,'price'=>$price);;
-array_push($arr, $array);
+array_push($arr, $array); 
 }
 $count--;
 }
 $narr= json_encode($arr);      
     $sql1="INSERT INTO `C_order`(`user_id`,`customer_id`,`products`,`date`) VALUES ('$cid','$hotel','$narr','$date');";
+    $bill_id = $conn->insert_id;
                 mysqli_query($conn, $sql1) or die(mysqli_error($conn));
+    $sql2="INSERT INTO `invoice`(`user_id`,`bill_id`,`products`,`order_type`,`date`) VALUES ('$cid','$bill_id','$narr','c','$date');";
+                mysqli_query($conn, $sql2) or die(mysqli_error($conn));
+     echo "<script>window.open('../index.php?stat=o_added','_self')</script>";
+
+}elseif($_POST['stat']=='purchase'){
+    $seller =ucfirst(mysqli_real_escape_string($conn, $_POST['seller']));
+    $date =ucfirst(mysqli_real_escape_string($conn, $_POST['date']));
+    $count =ucfirst(mysqli_real_escape_string($conn, $_POST['count']));
+    $arr=array();
+    $pr=0;
+    // echo $count;
+while ($count != 0) {
+    $q = mysqli_real_escape_string($conn, $_POST['q_'.$count.'']);
+    $pro = mysqli_real_escape_string($conn, $_POST['id_'.$count.'']);
+    $price = mysqli_real_escape_string($conn, $_POST['price_'.$count.'']);
+    
+    if (empty($q)) {
+// echo "null".$q;
+}else{
+    $pr=$price+$pr;
+    // echo "not null".$q;
+   $array = array();
+$array=array('id' => $pro, 'q' => $q,'price'=>$price);;
+array_push($arr, $array); 
+}
+$count--;
+}
+$narr= json_encode($arr);      
+    $sql1="INSERT INTO `S_order`(`user_id`,`seller_id`,`products`,`date`,`total_amount`) VALUES ('$cid','$seller','$narr','$date','$pr');";
+    $bill_id = $conn->insert_id;
+                mysqli_query($conn, $sql1) or die(mysqli_error($conn));
+    $sql2="INSERT INTO `invoice`(`user_id`,`bill_id`,`products`,`order_type`,`date`,`total_amount`) VALUES ('$cid','$bill_id','$narr','s','$date','$pr');";
+                mysqli_query($conn, $sql2) or die(mysqli_error($conn));
      echo "<script>window.open('../index.php?stat=o_added','_self')</script>";
 
 }else{

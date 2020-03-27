@@ -23,6 +23,11 @@ $setting = json_decode($mrow['settings']);
 
 	<title>DAXY🚖 | MS </title>
 
+	<!-- editable table links -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!-- end -->
+
 	<!--Bootstrap v4.3.1-->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -85,7 +90,7 @@ function showUser(str) {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
-        };
+        };Onion
         xmlhttp.open("GET","inc/result.php?stat=o&id="+str,true);
         xmlhttp.send();
     }
@@ -112,9 +117,14 @@ function showUser1(str) {
     }
 }
 </script>
+<!-- editable table js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/TableEditor/jquery.tabledit.js"></script>
+<!-- <script type="text/javascript" src="js/custom_table_edit.js"></script> -->
 
-
-    
+    <!-- end -->
 </head>
 
 <body id="<?php
