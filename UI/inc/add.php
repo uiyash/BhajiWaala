@@ -51,8 +51,12 @@ while ($count != 0) {
     $pro = mysqli_real_escape_string($conn, $_POST['id_'.$count.'']);
     $price = mysqli_real_escape_string($conn, $_POST['price_'.$count.'']);
     $array = array();
+    if (isset($q)) {
+        
+    
 $array=array('id' => $pro, 'q' => $q,'price'=>$price);;
 array_push($arr, $array);
+}
 $count--;
 }
 $narr= json_encode($arr);      

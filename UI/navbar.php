@@ -1,3 +1,4 @@
+
 <nav id="top-nav">
 				<div class="sideNavToggle"><i class="dripicons-align-justify"></i></div>
 				<div class="nav-search-input">
@@ -34,12 +35,14 @@
 							</div>
 							<a class="dropdown-item" href="support.html"><i class="dripicons-anchor"></i> FAQ</a>
 							<a class="dropdown-item" href="support.html"><i class="dripicons-ticket"></i> Support</a>
-							<a class="dropdown-item" href="login.html"><i class="dripicons-exit"></i> Sign out</a>
+							<a class="dropdown-item" href="logout.php"><i class="dripicons-exit"></i> Sign out</a>
 						</div>
 					</div>
 				</div>
 				<p class="user-name">
-					Anthony Henderson
+					<?php 
+					echo $mrow['name'];
+					?>
 					<span class="user-position">Team Admin</span>
 				</p>
 				<ul class="nav-icons">
